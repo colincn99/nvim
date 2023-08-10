@@ -181,6 +181,13 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+
+  D = {
+    name = "Diffview",
+    o = { "<cmd>DiffviewOpen<cr>", "DiffviewOpen"},
+    c = { "<cmd>DiffviewClose<cr>", "DiffviewClose"},
+    f = { "<cmd>DiffviewFileHistory<cr>", "DiffviewFileHistory"},
+  },
 }
 
 which_key.setup(setup)
