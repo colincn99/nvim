@@ -175,7 +175,7 @@ local mappings = {
     name = "Diffview",
     o = { "<cmd>DiffviewOpen<cr>", "DiffviewOpen"},
     c = { "<cmd>DiffviewClose<cr>", "DiffviewClose"},
-    f = { "<cmd>DiffviewFileHistory<cr>", "DiffviewFileHistory"},
+    f = { "<cmd>DiffviewFileHistory %<cr>", "DiffviewFileHistory"},
   },
 }
 
