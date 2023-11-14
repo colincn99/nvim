@@ -60,5 +60,8 @@ end
 
 _G.column_numbers = N
 vim.o.winbar="%{%v:lua.column_numbers.get_string()%}" 
+vim.cmd [[let &colorcolumn = join(range(3, 240, 3),',')]]
+vim.opt.cursorcolumn = true
+vim.opt.virtualedit = "all"
 
 return N
