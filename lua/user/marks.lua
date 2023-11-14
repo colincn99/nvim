@@ -1,4 +1,9 @@
-require'marks'.setup {
+local status_ok, marks = pcall(require, "marks")
+if not status_ok then
+	return
+end
+
+marks.setup({
   -- whether to map keybinds or not. default true
   default_mappings = true,
   -- which builtin marks to show. default {}
@@ -31,4 +36,6 @@ require'marks'.setup {
     annotate = false,
   },
   mappings = {}
-}
+})
+
+marks.toggle_signs()

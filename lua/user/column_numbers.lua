@@ -1,8 +1,18 @@
 local N = {} 
 
 vim.cmd [[
-  highlight Mode0 guibg=#5fafd7 guifg=#262626 gui=bold " NORMAL  
-  highlight Mode1 guibg=#ffafd7 guifg=#262626 gui=bold " NORMAL  
+  highlight Mode0 guibg=#cc2f00 guifg=#262626 gui=bold  
+  highlight Mode1 guibg=#db6600 guifg=#262626 gui=bold  
+  highlight Mode2 guibg=#e39e00 guifg=#262626 gui=bold  
+  highlight Mode3 guibg=#76b80d guifg=#262626 gui=bold  
+  highlight Mode4 guibg=#007668 guifg=#262626 gui=bold  
+  highlight Mode5 guibg=#006486 guifg=#262626 gui=bold  
+  highlight Mode6 guibg=#007cb5 guifg=#262626 gui=bold  
+  highlight Mode7 guibg=#465ab2 guifg=#262626 gui=bold  
+  highlight Mode8 guibg=#6d47b1 guifg=#262626 gui=bold  
+  highlight Mode9 guibg=#873b9c guifg=#262626 gui=bold  
+  hi LineNrAbove guifg=red ctermfg=red
+  hi LineNrBelow guifg=green ctermfg=green
 ]]
 
 N.get_left = function(length)
@@ -14,7 +24,7 @@ N.get_left = function(length)
   for i = length, 1, -1
   do
     if not colored then
-      string = string .. "%#Mode" .. math.floor(i / 10) % 2 .. "#"
+      string = string .. "%#Mode" .. math.floor(i / 10) % 10 .. "#"
       colored = true
     end
     string = string .. i % 10
@@ -36,7 +46,7 @@ N.get_right = function(length)
   for i = 1, length, 1
   do
     if not colored then
-      string = string .. "%#Mode" .. math.floor(i / 10) % 2 .. "#"
+      string = string .. "%#Mode" .. math.floor(i / 10) % 10 .. "#"
       colored = true
     end
     string = string .. i % 10
