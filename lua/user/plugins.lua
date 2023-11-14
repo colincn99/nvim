@@ -76,7 +76,7 @@ return packer.startup(function(use)
   use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"} -- simple to use language server installer
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
 	use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
-  use { "RRethy/vim-illuminate", commit = "d6ca7f77eeaf61b3e6ce9f0e5a978d606df44298" }
+  use { "RRethy/vim-illuminate", commit = "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86" }
   use { "mechatroner/rainbow_csv" }
 
 	-- Telescope
@@ -84,7 +84,7 @@ return packer.startup(function(use)
 	use { "nvim-telescope/telescope-live-grep-args.nvim" }
 
 	-- Treesitter
-	use {"nvim-treesitter/nvim-treesitter"}
+	use {"nvim-treesitter/nvim-treesitter", commit = "bf18ff20ae4d7b667b5e7ede0244c6596427d69e"}
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
