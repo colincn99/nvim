@@ -61,7 +61,26 @@ N.get_right = function(length)
   return string
 end
 
+local winbar_filetype_exclude = {
+  [""] = true,
+  ["NvimTree"] = true,
+  ["Outline"] = true,
+  ["Trouble"] = true,
+  ["alpha"] = true,
+  ["dashboard"] = true,
+  ["lir"] = true,
+  ["neo-tree"] = true,
+  ["neogitstatus"] = true,
+  ["packer"] = true,
+  ["spectre_panel"] = true,
+  ["startify"] = true,
+  ["toggleterm"] = true,
+}
+
 N.get_string = function()
+  if winbar_filetype_exclude[vim.bo.filetype] then
+    return ""
+  end
   local textoff = vim.fn.getwininfo(vim.fn.win_getid())[1].textoff
   local win_width = vim.fn.winwidth(0) - textoff
   local col_num = vim.fn.virtcol('.')
