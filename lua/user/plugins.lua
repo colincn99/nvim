@@ -80,8 +80,8 @@ return packer.startup(function(use)
   use { "mechatroner/rainbow_csv" }
 
 	-- Telescope
-	use { "nvim-telescope/telescope.nvim"}
-	use { "nvim-telescope/telescope-live-grep-args.nvim" }
+	use { "nvim-telescope/telescope.nvim", commit = "721cdcae134eb5c564cb6c9df6c317c3854528ad"}
+	use { "nvim-telescope/telescope-live-grep-args.nvim", commit = "851c0997d55601f2afd7290db0f90dc364e29f58"}
 
 	-- Treesitter
 	use {"nvim-treesitter/nvim-treesitter", commit = "bf18ff20ae4d7b667b5e7ede0244c6596427d69e"}
@@ -89,7 +89,6 @@ return packer.startup(function(use)
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
   use { "sindrets/diffview.nvim" }
-
   
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
