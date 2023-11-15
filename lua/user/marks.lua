@@ -7,7 +7,7 @@ marks.setup({
   -- whether to map keybinds or not. default true
   default_mappings = true,
   -- which builtin marks to show. default {}
-  builtin_marks = { ".", "<", ">", "^" },
+  builtin_marks = { ".", "<", ">", "^", "\""},
   -- whether movements cycle back to the beginning/end of buffer. default true
   cyclic = true,
   -- whether the shada file is updated after modifying uppercase marks. default false
@@ -36,6 +36,14 @@ marks.setup({
     annotate = false,
   },
   mappings = {}
+})
+
+local group = vim.api.nvim_create_augroup("marks-fix-hl", {})
+vim.api.nvim_create_autocmd({ "VimEnter" }, {
+  group = group,
+  callback = function()
+    vim.api.nvim_set_hl(0, "MarkSignNumHL", {})
+  end,
 })
 
 marks.toggle_signs()
