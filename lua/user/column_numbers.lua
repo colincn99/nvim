@@ -11,9 +11,6 @@ vim.cmd [[
   highlight Mode7 guibg=#465ab2 guifg=#262626 gui=bold  
   highlight Mode8 guibg=#6d47b1 guifg=#262626 gui=bold  
   highlight Mode9 guibg=#873b9c guifg=#262626 gui=bold  
-  highlight LineNr guifg=yellow ctermfg=yellow
-  highlight LineNrAbove guifg=red ctermfg=red
-  highlight LineNrBelow guifg=green ctermfg=green
   highlight ColorColumn guibg=black ctermbg=black
 ]]
 
