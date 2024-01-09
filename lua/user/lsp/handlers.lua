@@ -23,7 +23,7 @@ M.setup = function()
 	end
 
 	local config = {
-		virtual_text = false, -- disable virtual text
+		virtual_text = True, -- disable virtual text
 		signs = {
 			active = signs, -- show signs
 		},
@@ -41,6 +41,7 @@ M.setup = function()
 	}
 
 	vim.diagnostic.config(config)
+ 
 
 	vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
 		border = "rounded",
@@ -81,11 +82,6 @@ M.on_attach = function(client, bufnr)
 	end
 
 	lsp_keymaps(bufnr)
-	local status_ok, illuminate = pcall(require, "illuminate")
-	if not status_ok then
-		return
-	end
-	illuminate.on_attach(client)
 end
 
 return M

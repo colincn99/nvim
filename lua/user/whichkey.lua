@@ -178,6 +178,16 @@ local mappings = {
     c = { "<cmd>DiffviewClose<cr>", "DiffviewClose"},
     f = { "<cmd>DiffviewFileHistory %<cr>", "DiffviewFileHistory"},
   },
+  
+  r = {
+    "<cmd>exec 'call setpos(\".\", b:searchorigin)'<CR>",
+    "Search Origin"
+
+  },
+  o = {
+    "<cmd>Outline<CR>",
+    "Outline Toggle",
+  },
 }
 
 which_key.setup(setup)

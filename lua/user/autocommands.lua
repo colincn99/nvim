@@ -23,6 +23,13 @@ vim.cmd [[
     autocmd!
     autocmd VimResized * tabdo wincmd = 
   augroup end
+
+  augroup searchorigin
+    autocmd!
+    au CmdLineEnter * let b:cmdtype = expand('<afile>') | if (b:cmdtype == '/' || b:cmdtype == '?') | let b:searchorigin = getpos(".") | endif
+  augroup END
+
+  nnoremap <leader>/ :exec 'call setpos(".", b:searchorigin)'<CR>
 ]]
 
 -- Autoformat

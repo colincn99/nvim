@@ -9,6 +9,8 @@ if not config_status_ok then
 end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
+local gwidth = vim.api.nvim_list_uis()[1].width
+local gheight = vim.api.nvim_list_uis()[1].height
 
 nvim_tree.setup {
   update_focused_file = {
@@ -54,14 +56,25 @@ nvim_tree.setup {
     },
   },
   view = {
-    adaptive_size = true,
-    side = "left",
+    -- adaptive_size = true,
+    -- side = "left",
     relativenumber = true,
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
         { key = "h", cb = tree_cb "close_node" },
         { key = "v", cb = tree_cb "vsplit" },
+      },
+    },
+    float = {
+      enable = true,
+      open_win_config = {
+        relative = "editor",
+        border = "rounded",
+        width = gwidth,
+        height = gheight - 6,
+        row = 1,
+        col = 1,
       },
     },
   },
