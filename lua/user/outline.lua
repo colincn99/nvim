@@ -1,4 +1,8 @@
-local a = require("outline")
+local status_ok, a = pcall(require, "outline")
+if not status_ok then
+  return
+end
+
 a.setup({
   outline_window = {
     position = 'right',
