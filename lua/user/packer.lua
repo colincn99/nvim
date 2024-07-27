@@ -50,7 +50,7 @@ return packer.startup(function(use)
   use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
   use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
-	use {"folke/which-key.nvim"}
+	use {"folke/which-key.nvim", commit = "6c1584e"}
 
   -- Editor Symbols
   use { "petertriho/nvim-scrollbar" }
@@ -77,7 +77,7 @@ return packer.startup(function(use)
   use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"} -- simple to use language server installer
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
 	use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
-  use { "RRethy/vim-illuminate", commit = "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86" }
+  use { "RRethy/vim-illuminate", commit = "5eeb795" }
   use { "mechatroner/rainbow_csv", commit = "6955d13a65e0161e8dad488b6045441d527d62ec"}
 
 	-- Telescope
@@ -85,7 +85,7 @@ return packer.startup(function(use)
 	use { "nvim-telescope/telescope-live-grep-args.nvim", commit = "851c0997d55601f2afd7290db0f90dc364e29f58"}
 
 	-- Treesitter
-	use {"nvim-treesitter/nvim-treesitter", commit = "bf18ff20ae4d7b667b5e7ede0244c6596427d69e"}
+	use {"nvim-treesitter/nvim-treesitter", commit = "c5b3560"}
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
