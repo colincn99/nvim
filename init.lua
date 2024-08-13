@@ -1,7 +1,7 @@
 require "user.options"
 require "user.keymaps"
 require "user.outline"
-require "user.packer"
+require "user.packer_plugins"
 require "user.colorscheme"
 require "user.cmp"
 require "user.lsp"
