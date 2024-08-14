@@ -42,15 +42,15 @@ packer.init({
 return packer.startup(function(use)
   use { "wbthomason/packer.nvim"} -- Have packer manage itself
   use { "nvim-lua/plenary.nvim"} -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" } -- Autopairs, integrates with both cmp and treesitter
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
-  use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
+  -- use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
+  use { "stevearc/oil.nvim", commit = "fcca212" }
+  -- use { "folke/noice.nvim", commit = "448bb9c" }
   use { "nvim-lualine/lualine.nvim", commit = "a52f078026b27694d2290e34efa61a6e4a690621" }
   use { "akinsho/bufferline.nvim", commit = "0b2fd86" }
   use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
-  use { "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
-	use {"folke/which-key.nvim", commit = "6c1584e"}
+	use {"folke/which-key.nvim", commit = "4433e5e"}
 
   -- Editor Symbols
   use { "petertriho/nvim-scrollbar" }
@@ -62,9 +62,10 @@ return packer.startup(function(use)
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
 
 	-- Cmp 
-  use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
+  use { "hrsh7th/nvim-cmp", commit = "ae644fe" } -- The completion plugin
   use { "hrsh7th/cmp-buffer", commit = "3022dbc9166796b644a841a02de8dd1cc1d311fa" } -- buffer completions
   use { "hrsh7th/cmp-path", commit = "447c87cdd6e6d6a1d2488b1d43108bfa217f56e1" } -- path completions
+  use { "hrsh7th/cmp-cmdline", commit = "d250c63"}
 	use { "saadparwaiz1/cmp_luasnip", commit = "a9de941bcbda508d0a45d28ae366bb3f08db2e36" } -- snippet completions
 	use { "hrsh7th/cmp-nvim-lsp", commit = "3cf38d9c957e95c397b66f91967758b31be4abe6" }
 	use { "hrsh7th/cmp-nvim-lua", commit = "d276254e7198ab7d00f117e88e223b4bd8c02d21" }
@@ -76,7 +77,8 @@ return packer.startup(function(use)
 	use { "neovim/nvim-lspconfig", commit = "0b8165c" } -- enable LSP
   use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"} -- simple to use language server installer
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
-	use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
+	-- use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
+  use { "nvimtools/none-ls.nvim", commit = "cfa65d8" }
   use { "RRethy/vim-illuminate", commit = "5eeb795" }
   use { "mechatroner/rainbow_csv", commit = "6955d13a65e0161e8dad488b6045441d527d62ec"}
 
@@ -93,6 +95,10 @@ return packer.startup(function(use)
 
   -- Outline
   use { "hedyhli/outline.nvim", commit = "8c6b11e4c27bca690bfde0c6ce35ba66a805dfa3" }
+  use { "HiPhish/rainbow-delimiters.nvim", commit = "0543d6f"}
+  use { "karb94/neoscroll.nvim", commit = "532dcc8"}
+  use { "echasnovski/mini.surround", commit = "57caca9"}
+  use { "christoomey/vim-tmux-navigator", commit = "5b3c701"}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

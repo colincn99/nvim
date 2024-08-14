@@ -30,6 +30,8 @@ vim.cmd [[
   augroup END
 
   nnoremap <leader>/ :exec 'call setpos(".", b:searchorigin)'<CR>
+
+  autocmd VimLeave * :mksession! ~/.prev_session
 ]]
 
 -- Autoformat
