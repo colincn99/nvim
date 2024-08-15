@@ -100,6 +100,7 @@ return packer.startup(function(use)
   use { "karb94/neoscroll.nvim", commit = "532dcc8"}
   use { "kylechui/nvim-surround", commit = "ec2dc76"}
   use { "alexghergh/nvim-tmux-navigation", commit = "4898c98"}
+  use { "jessekelighine/vindent.vim", commit = "f8433c1"}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
