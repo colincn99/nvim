@@ -93,12 +93,12 @@ return packer.startup(function(use)
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
   use { "sindrets/diffview.nvim", commit ="3dc498c9777fe79156f3d32dddd483b8b3dbd95f" }
 
-  -- Outline
+  -- Other
   use { "hedyhli/outline.nvim", commit = "8c6b11e4c27bca690bfde0c6ce35ba66a805dfa3" }
   use { "HiPhish/rainbow-delimiters.nvim", commit = "0543d6f"}
   use { "karb94/neoscroll.nvim", commit = "532dcc8"}
-  use { "echasnovski/mini.surround", commit = "57caca9"}
-  use { "christoomey/vim-tmux-navigator", commit = "5b3c701"}
+  use { "kylechui/nvim-surround", commit = "ec2dc76"}
+  use { "alexghergh/nvim-tmux-navigation", commit = "4898c98"}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
