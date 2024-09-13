@@ -43,13 +43,9 @@ return packer.startup(function(use)
   use { "wbthomason/packer.nvim"} -- Have packer manage itself
   use { "nvim-lua/plenary.nvim"} -- Useful lua functions used by lots of plugins
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
-  -- use { "kyazdani42/nvim-tree.lua", commit = "7282f7de8aedf861fe0162a559fc2b214383c51c" }
-  use { "stevearc/oil.nvim", commit = "fcca212" }
-  -- use { "folke/noice.nvim", commit = "448bb9c" }
   use { "nvim-lualine/lualine.nvim", commit = "a52f078026b27694d2290e34efa61a6e4a690621" }
-  use { "akinsho/bufferline.nvim", commit = "0b2fd86" }
   use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
-  use { "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" }
+  use { "lukas-reineke/indent-blankline.nvim", commit = "18603eb" }
 	use {"folke/which-key.nvim", commit = "4433e5e"}
 
   -- Editor Symbols
@@ -101,6 +97,8 @@ return packer.startup(function(use)
   use { "kylechui/nvim-surround", commit = "ec2dc76"}
   use { "alexghergh/nvim-tmux-navigation", commit = "4898c98"}
   use { "jessekelighine/vindent.vim", commit = "f8433c1"}
+  use { "easymotion/vim-easymotion", commit = "b3cfab2"}
+  use { "mikavilpas/yazi.nvim", commit = "ac97d7c"}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

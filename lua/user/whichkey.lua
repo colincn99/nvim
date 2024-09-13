@@ -80,10 +80,10 @@ local opts = {
 
 local mappings = {
   ["b"] = {
-    "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+    "<cmd>lua require('telescope.builtin').buffers({sort_lastused = true})<cr>",
     "Buffers",
   },
-  ["e"] = { "<cmd>Oil<cr>", "Explorer" },
+  ["e"] = { "<cmd>Yazi<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
   ["x"] = { "<cmd>bdelete!<CR>", "Close Buffer" },
@@ -92,7 +92,7 @@ local mappings = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Find files",
   },
-  ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+  ["F"] = { "<cmd>Telescope live_grep<cr>", "Find Text" },
   ["L"] = { "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<cr> ", "Live Grep Args"},
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["m"] = { "<cmd>MarksToggleSigns<cr>", "Marks Toggle Signs"},
