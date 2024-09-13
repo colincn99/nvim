@@ -37,13 +37,11 @@ packer.init({
 		end,
 	},
 })
-
--- Install your plugins here
 return packer.startup(function(use)
   use { "wbthomason/packer.nvim"} -- Have packer manage itself
   use { "nvim-lua/plenary.nvim"} -- Useful lua functions used by lots of plugins
   use { "numToStr/Comment.nvim", commit = "97a188a98b5a3a6f9b1b850799ac078faa17ab67" }
-  use { "nvim-lualine/lualine.nvim", commit = "a52f078026b27694d2290e34efa61a6e4a690621" }
+  use { "nvim-lualine/lualine.nvim", commit = "b431d22" }
   use { "ahmedkhalf/project.nvim", commit = "628de7e433dd503e782831fe150bb750e56e55d6" }
   use { "lukas-reineke/indent-blankline.nvim", commit = "18603eb" }
 	use {"folke/which-key.nvim", commit = "4433e5e"}
@@ -54,8 +52,12 @@ return packer.startup(function(use)
   use { "chentoast/marks.nvim", commit = "76aca50"}
 
 	-- Colorschemes
-  use { "folke/tokyonight.nvim", commit = "66bfc2e8f754869c7b651f3f47a2ee56ae557764" }
+  use { "folke/tokyonight.nvim", commit = "4b386e6" }
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
+  use { "EdenEast/nightfox.nvim", commit = "7557f26"}
+  use { "preservim/vim-colors-pencil" }
+  use { "0xstepit/flow.nvim" }
+  use { "dracula/vim"}
 
 	-- Cmp 
   use { "hrsh7th/nvim-cmp", commit = "ae644fe" } -- The completion plugin
@@ -79,7 +81,7 @@ return packer.startup(function(use)
   use { "mechatroner/rainbow_csv", commit = "6955d13a65e0161e8dad488b6045441d527d62ec"}
 
 	-- Telescope
-	use { "nvim-telescope/telescope.nvim", commit = "721cdcae134eb5c564cb6c9df6c317c3854528ad"}
+	use { "nvim-telescope/telescope.nvim", commit = "927c10f"}
 	use { "nvim-telescope/telescope-live-grep-args.nvim", commit = "851c0997d55601f2afd7290db0f90dc364e29f58"}
 
 	-- Treesitter
@@ -88,7 +90,7 @@ return packer.startup(function(use)
 
 	-- Git
 	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
-  use { "sindrets/diffview.nvim", commit ="3dc498c9777fe79156f3d32dddd483b8b3dbd95f" }
+  use { "sindrets/diffview.nvim", commit ="4516612" }
 
   -- Other
   use { "hedyhli/outline.nvim", commit = "8c6b11e4c27bca690bfde0c6ce35ba66a805dfa3" }
