@@ -99,7 +99,7 @@ return packer.startup(function(use)
   use { "kylechui/nvim-surround", commit = "ec2dc76"}
   use { "alexghergh/nvim-tmux-navigation", commit = "4898c98"}
   use { "jessekelighine/vindent.vim", commit = "f8433c1"}
-  use { "easymotion/vim-easymotion", commit = "b3cfab2"}
+  use { "hadronized/hop.nvim", commit = "1a1ecea"}
   use { "mikavilpas/yazi.nvim", commit = "ac97d7c"}
   use { "nvim-tree/nvim-tree.lua", commit = "d41b4ca"}
 
