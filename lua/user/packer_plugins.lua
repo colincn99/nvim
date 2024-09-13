@@ -101,6 +101,7 @@ return packer.startup(function(use)
   use { "jessekelighine/vindent.vim", commit = "f8433c1"}
   use { "easymotion/vim-easymotion", commit = "b3cfab2"}
   use { "mikavilpas/yazi.nvim", commit = "ac97d7c"}
+  use { "nvim-tree/nvim-tree.lua", commit = "d41b4ca"}
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
