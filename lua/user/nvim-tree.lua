@@ -30,7 +30,7 @@ require("nvim-tree").setup {
     signcolumn = "yes",
     width = 30,
     float = {
-      enable = true,
+      enable = false,
       quit_on_focus_loss = true,
       open_win_config = {
         relative = "editor",
@@ -209,7 +209,7 @@ require("nvim-tree").setup {
       },
     },
     open_file = {
-      quit_on_open = false,
+      quit_on_open = true,
       eject = true,
       resize_window = true,
       window_picker = {
