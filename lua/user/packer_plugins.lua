@@ -103,6 +103,7 @@ return packer.startup(function(use)
   use { "mikavilpas/yazi.nvim", commit = "ac97d7c"}
   use { "nvim-tree/nvim-tree.lua", commit = "d41b4ca"}
   use { "https://github.com/windwp/nvim-autopairs", commit = "23320e7" }
+  use { "assistcontrol/readline.nvim", commit = "5cb2734" }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
