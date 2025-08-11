@@ -1,5 +1,6 @@
 require "user.options"
 require "user.keymaps"
+require "user.commands"
 require "user.vindent"
 require "user.packer_plugins"
 require "user.treesitter"
