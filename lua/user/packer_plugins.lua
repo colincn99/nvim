@@ -101,7 +101,7 @@ return packer.startup(function(use)
   use { "jessekelighine/vindent.vim", commit = "f8433c1"}
   use { "hadronized/hop.nvim", commit = "1a1ecea"}
   use { "mikavilpas/yazi.nvim", commit = "ac97d7c"}
-  use { "nvim-tree/nvim-tree.lua", commit = "d41b4ca"}
+  use { "nvim-tree/nvim-tree.lua", commit = "f0e9951"}
   use { "https://github.com/windwp/nvim-autopairs", commit = "23320e7" }
   use { "assistcontrol/readline.nvim", commit = "5cb2734" }
 
