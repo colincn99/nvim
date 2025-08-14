@@ -1,8 +1,13 @@
 local colorscheme = "flow"
 
+if colorscheme == "flow" then
+    require("flow").setup({})
+end
+
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
-  return
+    print("colorscheme not loaded")
+    return
 end
 
 vim.cmd [[

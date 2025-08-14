@@ -56,7 +56,7 @@ return packer.startup(function(use)
   use { "lunarvim/darkplus.nvim", commit = "13ef9daad28d3cf6c5e793acfc16ddbf456e1c83" }
   use { "EdenEast/nightfox.nvim", commit = "7557f26"}
   use { "preservim/vim-colors-pencil" }
-  use { "0xstepit/flow.nvim" }
+  use { "0xstepit/flow.nvim" , commit = "095c54b"}
   use { "dracula/vim"}
 
 	-- Cmp 
