@@ -1,5 +1,6 @@
 local none_ls_status_ok, none_ls = pcall(require, "null-ls")
 if not none_ls_status_ok then
+    print("null-ls not found")
 	return
 end
 

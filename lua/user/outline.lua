@@ -1,5 +1,6 @@
 local status_ok, a = pcall(require, "outline")
 if not status_ok then
+  print("outline not found")
   return
 end
 

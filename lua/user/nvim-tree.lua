@@ -1,7 +1,13 @@
 local gwidth = vim.api.nvim_list_uis()[1].width
 local gheight = vim.api.nvim_list_uis()[1].height
 
-require("nvim-tree").setup {
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not status_ok then
+  print("nvim-tree not found")
+  return
+end
+
+nvim_tree.setup {
   on_attach = "default",
   hijack_cursor = false,
   auto_reload_on_write = true,

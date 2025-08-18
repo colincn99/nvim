@@ -1,7 +1,13 @@
+local status_ok, treesitter = pcall(require, "nvim-treesitter.configs")
+if not status_ok then
+  print("nvim-treesitter not found")
+  return
+end
+
 local M = {
 }
 function M.config()
-  require"nvim-treesitter.configs".setup {
+  treesitter.setup {
     ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python" }, -- put the language you want in this array
     -- ensure_installed = "all", -- one of "all" or a list of languages
     ignore_install = { "" },                                                       -- List of parsers to ignore installing

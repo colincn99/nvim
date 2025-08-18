@@ -1,5 +1,6 @@
 local status_ok, nvim_tmux= pcall(require, "nvim-tmux-navigation")
 if not status_ok then
+  print("nvim-tmux-navigation not found")
   return
 end
 

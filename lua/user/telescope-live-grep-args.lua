@@ -1,5 +1,14 @@
-local telescope = require("telescope")
-local lga_actions = require("telescope-live-grep-args.actions")
+local status_ok, telescope = pcall(require, "telescope")
+if not status_ok then
+  print("telescope not found")
+  return
+end
+
+local status_ok, lga_actions = pcall(require, "telescope-live-grep-args.actions")
+if not status_ok then
+  print("telescope-live-grep-args not found")
+  return
+end
 
 telescope.setup {
   extensions = {
