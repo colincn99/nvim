@@ -10,6 +10,7 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -53,4 +54,8 @@ keymap("n", "<A-h>", tostring(hjump) .. "h" , opts)
 keymap("n", "<A-j>", tostring(vjump) .. "j" , opts)
 keymap("n", "<A-k>", tostring(vjump) .. "k" , opts)
 keymap("n", "<A-l>", tostring(hjump) .. "l" , opts)
+keymap("v", "<A-h>", tostring(hjump) .. "h" , opts)
+keymap("v", "<A-j>", tostring(vjump) .. "j" , opts)
+keymap("v", "<A-k>", tostring(vjump) .. "k" , opts)
+keymap("v", "<A-l>", tostring(hjump) .. "l" , opts)
 
