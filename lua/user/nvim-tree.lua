@@ -32,7 +32,7 @@ nvim_tree.setup {
     side = "left",
     preserve_window_proportions = false,
     number = false,
-    relativenumber = false,
+    relativenumber = true,
     signcolumn = "yes",
     width = 30,
     float = {
@@ -215,7 +215,7 @@ nvim_tree.setup {
       },
     },
     open_file = {
-      quit_on_open = true,
+      quit_on_open = false,
       eject = true,
       resize_window = true,
       window_picker = {

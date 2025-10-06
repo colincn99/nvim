@@ -25,7 +25,7 @@ a.setup({
   },
 })
 
-vim.cmd [[
-nmap <expr> <C-n> ":<C-u>OutlineFollow<CR>" .. v:count1 .. "j<CR>"
-nmap <expr> <C-p> ":<C-u>OutlineFollow<CR>" .. v:count1 .. "k<CR>"
-]]
+-- vim.cmd [[
+-- nmap <expr> <C-n> ":<C-u>OutlineFollow<CR>" .. v:count1 .. "j<CR>"
+-- nmap <expr> <C-p> ":<C-u>OutlineFollow<CR>" .. v:count1 .. "k<CR>"
+-- ]]

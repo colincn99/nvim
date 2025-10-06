@@ -23,14 +23,7 @@ lualine.setup {
       winbar = 1000,
     }
   },
-  sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {{'filename', path = 1}},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {{'tabs', mode = 2}}
-  },
+  sections = {},
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
@@ -39,19 +32,26 @@ lualine.setup {
     lualine_y = {},
     lualine_z = {}
   },
-  tabline = {},
-  winbar = {
-    lualine_a = {},
+  tabline = {
+    lualine_a = {{'tabs', mode = 2, max_length = vim.o.columns}},
     lualine_b = {},
-    lualine_c = {{'filename', path = 1}},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  winbar = {
+    lualine_a = {'mode'},
+    lualine_b = {{'filename', path = 1}},
+    lualine_c = {},
     lualine_x = {'encoding', 'fileformat', 'filetype', 'diff'},
     lualine_y = {'diagnostics'},
     lualine_z = {'vim.api.nvim_win_get_number(0)'}
   },
   inactive_winbar = {
     lualine_a = {},
-    lualine_b = {},
-    lualine_c = {{'filename', path = 1}},
+    lualine_b = {{'filename', path = 1}},
+    lualine_c = {},
     lualine_x = {'encoding', 'fileformat', 'filetype', 'diff'},
     lualine_y = {'diagnostics'},
     lualine_z = {'vim.api.nvim_win_get_number(0)'}
@@ -59,4 +59,5 @@ lualine.setup {
   extensions = {}
 }
 
-vim.opt.showtabline = 0
+vim.opt.showtabline = 2
+vim.cmd[[set laststatus=0]]
